@@ -1,4 +1,7 @@
 import { defineConfig } from 'vite'
-export default {
-  base: '/Enem-quiz-with-React/',
-};
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/Enem-quiz-with-React/', // ← IMPORTANTE!
+})
