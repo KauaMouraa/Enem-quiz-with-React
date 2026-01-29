@@ -1,3 +1,4 @@
+import Paths from "./routes/Paths";
 import Header from "./components/Header";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
@@ -8,8 +9,7 @@ import Pergunta from "./components/Pergunta";
 const App = () => {
   return ( 
     <>
-      <Header />
-      <Pergunta />
+      <Paths />
     </>
    );
 }
