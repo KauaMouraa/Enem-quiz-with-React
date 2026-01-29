@@ -18,24 +18,3 @@ const Paths = () => {
 }
  
 export default Paths;
-
-
-/* const {logged} = useContext(Context);
-
-    return ( 
-        <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Login />}/>
-                    <Route path="*" element={<NotFound />}/>
-                    {
-                        logged && (
-                            <>
-                                <Route path="/home" element={<Home />}/>
-                            </>
-                        )
-                    }                
-                </Routes>
-            </BrowserRouter>
-        </>
-     ); */
