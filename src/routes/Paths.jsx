@@ -1,20 +1,21 @@
-import { BrowserRouter, createBrowserRouter, Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from "../pages/Home";
+import Pergunta from "../components/Pergunta";
 import NotFound from "../pages/NotFound";
 
 const Paths = () => {
-    return(
-        <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Navigate to="/home" replace />} />
-                    <Route path="*" element={<NotFound />}/>
-                    <Route path="/home" element={<Home />}/>
-                    <Route path="/pergunta" element={<Pergunta />}/>
-                </Routes>
-            </BrowserRouter>
-        </>
-    )
-    
-}
- 
+  return (
+    <Routes>
+      {/* Rota inicial */}
+      <Route path="/" element={<Home />} />
+
+      {/* Perguntas */}
+      <Route path="/pergunta" element={<Pergunta />} />
+
+      {/* Rota catch-all */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+};
+
 export default Paths;

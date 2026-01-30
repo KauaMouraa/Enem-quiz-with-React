@@ -6,7 +6,7 @@ const Header = () => {
              <header className="bg-green-600 text-white p-2 flex items-center justify-between shadow-md">
                 <div className="flex items-center gap-4">
                     <img src={logo} alt="Logo ENEM" height="50px"/>
-                    <h1 className="text-2xl font-bold">Projeto ENEM</h1>
+                    <h1 className="text-2xl font-bold">Quiz ENEM</h1>
                 </div>
             </header>
         </>
