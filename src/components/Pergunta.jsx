@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { API } from "../services/API";
 
 const Pergunta = () => {
@@ -7,7 +8,9 @@ const Pergunta = () => {
   const [numero, setNumero] = useState(1);
   const [exibirresposta, setExibirRespota] = useState(false);
 
-  const ano = 2020;
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const ano = queryParams.get("year");
 
   async function getQuest() {
     try {
@@ -19,9 +22,12 @@ const Pergunta = () => {
   }
 
   useEffect(() => {
-    getQuest();
-    setResposta(null);
-  }, [numero]);
+    if (ano) {
+      getQuest();
+      setResposta(null);
+      setExibirRespota(false);
+    }
+  }, [numero, ano]);
 
   if (!quest) {
     return <p>Carregando...</p>;
@@ -35,11 +41,10 @@ const Pergunta = () => {
     setNumero(prev => prev + 1);
   }
 
-
-
   return (
     <div>
       <h2>{quest.title}</h2>
+      <p><strong>Ano:</strong> {ano}</p>
       <p>{quest.context}</p>
 
       {quest.files && quest.files.map((img, i) => (
@@ -59,7 +64,7 @@ const Pergunta = () => {
                 textAlign: 'left',
               }}
             >
-              <span>{alt.letter}){alt.text}</span>
+              <span>{alt.letter}) {alt.text}</span>
             </button>
           </li>
         ))}
@@ -67,37 +72,32 @@ const Pergunta = () => {
 
       {resposta && (
         <p>
-          Você escolheu a letra: <strong>{resposta}</strong><br />
+          Você escolheu a letra: <strong>{resposta}</strong>
         </p>
       )}
 
       <div className="flex justify-content-center">
-
         <button onClick={() => setExibirRespota(true)}>
-          exibir resposta
-          
-
+          Exibir resposta
         </button>
       </div>
 
       {exibirresposta && (
         <p>
           {resposta === quest.correctAlternative ? (
-            <span style={{ color: "green"}}>Você acertou! </span>
-            ) : (
-              <span style={{ color: "red"}}>Você errou. </span>
+            <span style={{ color: "green" }}>Você acertou! </span>
+          ) : (
+            <span style={{ color: "red" }}>Você errou. </span>
           )}
           A resposta correta é: <span>{quest.correctAlternative}</span>
         </p>
       )}
-      
+
       <div className="flex justify-content-center">
         <button onClick={proximaQuestao}>
           Próxima questão →
         </button>
       </div>
-      
-
     </div>
   );
 };
