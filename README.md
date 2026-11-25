@@ -1,97 +1,70 @@
-📚 ENEM Quiz with React
+# 🎓 ENEM Quiz
 
-🎯 A responsive, interactive quiz web app with ENEM-style questions, built with React + Vite, available online for anyone to practice knowledge.
+Aplicação web interativa voltada à preparação de estudantes para o ENEM, desenvolvida com React.
 
-👉 Live demo: https://kauamouraa.github.io/Enem-quiz-with-React/
+## 📌 Sobre o projeto
 
-🚀 What It Is
+O ENEM Quiz foi desenvolvido com o objetivo de proporcionar uma experiência de estudo interativa, utilizando tecnologias modernas de desenvolvimento front-end.
 
-This is a single-page quiz application where users can:
+## 🚀 Funcionalidades
 
-Start a quiz
+- Interface responsiva e intuitiva.
+- Sistema de questões para o ENEM.
+- Navegação entre páginas.
+- Confirmação de saída durante o questionário.
+- Página personalizada de erro 404.
 
-Navigate between questions
+## 🛠️ Tecnologias utilizadas
 
-Choose answers
+- React
+- JavaScript
+- Vite
+- React Router DOM
+- PrimeReact
+- PrimeFlex
+- PrimeIcons
+- CSS
 
-Get immediate feedback (depending on implementation)
+## 💻 Como executar o projeto
 
-Complete the quiz and review results
+Clone o repositório:
 
-It’s a modern frontend project built using React and related libraries to deliver an engaging quiz experience.
-
-📦 Technologies Used
-
-The project uses:
-
-⚛️ React (latest version)
-
-⚡ Vite — lightweight dev server and build tool
-
-🚀 React Router DOM — for navigation
-
-📡 Axios — for external data fetching (if implemented)
-
-✨ PrimeReact/Tailwind CSS — styling and responsive layouts
-
-The app can be expanded later to load real questions from an API like an ENEM questions database.
-
-🧠 Features
-
-✔ A start screen to begin the quiz
-✔ Multiple choice questions
-✔ Navigation between questions
-✔ Styled UI with responsiveness
-✔ Live deployed on GitHub Pages with a real URL you can share
-
-📦 Installation (Local Development)
-
-To run the app locally, do:
-
+```bash
 git clone https://github.com/KauaMouraa/Enem-quiz-with-React.git
+```
+
+Acesse a pasta do projeto:
+
+```bash
 cd Enem-quiz-with-React
+```
+
+Instale as dependências:
+
+```bash
 npm install
+```
+
+Execute a aplicação:
+
+```bash
 npm run dev
+```
 
-Then open http://localhost:5173 in your browser.
+## 📚 Aprendizados
 
-🗂️ Project Structure
-Enem-quiz-with-React/
-├─ public/           # Assets & static files
-├─ src/
-│   ├─ assets/       # Images, logos
-│   ├─ components/   # UI components (Header, Question, etc.)
-│   ├─ pages/        # App pages (Home, Quiz, Results)
-│   ├─ routes/       # React Router setup
-│   ├─ utils/        # Utility functions
-│   └─ App.jsx       # Main app component
-├─ .gitignore
-├─ package.json
-├─ vite.config.js
-└─ README.md
-🧩 What You Can Add
+Durante o desenvolvimento deste projeto, aprimorei meus conhecimentos em:
 
-This project can be expanded with:
+- Desenvolvimento front-end.
+- Componentização com React.
+- Gerenciamento de rotas.
+- Responsividade.
+- Organização de código.
+- Git e GitHub.
 
-🎓 Real ENEM question API integration (e.g., from an open ENEM database API)
+## 👨‍💻 Autor
 
-🕐 A timer per question
+Desenvolvido por Kauã Moura.
 
-✅ A quiz score summary screen
-
-📊 Difficulty levels or topic filters
-
-❤️ Contributing
-
-Contributions are welcome!
-Feel free to open an issue or submit a PR to improve features, add question data, or polish the UI.
-
-📄 License
-
-No license specified. Check with the repository owner before commercial use.
-
-If you want, I can also generate:
-
-✅ A JSON template for quiz questions
-✅ A script example to fetch real ENEM questions from an API
-✅ A version of this README with badges, screenshots, and deployment steps
+[LinkedIn](https://www.linkedin.com/in/kauam0ura/) |
+[GitHub](https://github.com/KauaMouraa)
