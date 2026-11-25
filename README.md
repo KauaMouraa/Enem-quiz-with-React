@@ -2,6 +2,10 @@
 
 Aplicação web interativa voltada à preparação de estudantes para o ENEM, desenvolvida com React.
 
+## 🌐 Acesse o projeto
+
+[![Acessar aplicação](https://img.shields.io/badge/Acessar%20aplicação-0078D4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://kauamouraa.github.io/Enem-quiz-with-React/)
+
 ## 📌 Sobre o projeto
 
 O ENEM Quiz foi desenvolvido com o objetivo de proporcionar uma experiência de estudo interativa, utilizando tecnologias modernas de desenvolvimento front-end.
