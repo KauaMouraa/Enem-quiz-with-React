@@ -6,6 +6,16 @@ Aplicação web interativa voltada à preparação de estudantes para o ENEM, de
 
 O ENEM Quiz foi desenvolvido com o objetivo de proporcionar uma experiência de estudo interativa, utilizando tecnologias modernas de desenvolvimento front-end.
 
+## 📸 Demonstração do projeto
+
+### Página inicial
+
+![Página inicial](./home.png)
+
+### Página de perguntas
+
+![Página de perguntas](./quiz.png)
+
 ## 🚀 Funcionalidades
 
 - Interface responsiva e intuitiva.
